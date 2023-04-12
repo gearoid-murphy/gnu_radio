@@ -1,6 +1,7 @@
 options:
   parameters:
     author: ''
+    catch_exceptions: 'True'
     category: '[GRC Hier Blocks]'
     cmake_opt: ''
     comment: ''
@@ -39,18 +40,18 @@ blocks:
     gui_hint: ''
     label: ''
     min_len: '200'
-    orient: Qt.Horizontal
+    orient: QtCore.Qt.Horizontal
     rangeType: float
-    start: 100e6
-    step: '1'
-    stop: 110e6
-    value: 107e6
+    start: 2.4e9
+    step: .1e9
+    stop: 2.5e9
+    value: 2.45e9
     widget: counter_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [78, 443]
+    coordinate: [48, 340.0]
     rotation: 0
     state: true
 - name: if_gain
@@ -60,7 +61,7 @@ blocks:
     gui_hint: ''
     label: ''
     min_len: '200'
-    orient: Qt.Horizontal
+    orient: QtCore.Qt.Horizontal
     rangeType: float
     start: '1'
     step: '1'
@@ -71,7 +72,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [348, 590]
+    coordinate: [216, 340.0]
     rotation: 0
     state: true
 - name: rf_gain
@@ -88,7 +89,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [862, 654]
+    coordinate: [352, 348.0]
     rotation: 0
     state: true
 - name: samp_rate
@@ -117,7 +118,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [593, 322]
+    coordinate: [56, 236.0]
     rotation: 0
     state: true
 - name: osmosdr_sink_0
@@ -378,7 +379,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1074, 245]
+    coordinate: [536, 156.0]
     rotation: 0
     state: true
 
